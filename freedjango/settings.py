@@ -227,17 +227,11 @@ AUTHENTICATION_BACKENDS = (
 #         }
 #     }
 # }
-CACHES = { 
-    'default': { 
-        'BACKEND':  
-                'django.core.cache.backends.redis.RedisCache', 
-        'LOCATION': 'redis://redis-12583.c299.asia-northeast1-1.gce.redns.redis-cloud.com:12583', 
-        'OPTIONS': { 
-            'password': 'euq9hnBtrn8FkRdsSLfNGftSf6PRqpt9', 
-        } 
-    } 
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+    }
 }
-
 
 CACHE_MIDDLEWARE_ALIAS = 'default'
 CACHE_MIDDLEWARE_SECONDS = 30
