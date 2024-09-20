@@ -4,7 +4,7 @@ from django.contrib.auth.views import LoginView, LogoutView, PasswordResetView, 
 
 from . import views
 
-# app_name = "polls"
+app_name = "polls"
 urlpatterns = [
     re_path(r"^index/$", views.index, name="index"),
     path("<int:question_id>/", views.QuestionRedirectView.as_view(), name="detail"),

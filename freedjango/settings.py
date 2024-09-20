@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 from datetime import timedelta
-import dj_database_url
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -46,7 +45,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # "park",
     "polls",
-    'social_django',
+    # 'social_django',
     'userprofile',
     'bootstrap4',
     "rest_framework",
